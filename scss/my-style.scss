@@ -1,0 +1,642 @@
+$goud: #c8a33c;
+$goud_tekst: #ad8d34;
+$body_tekst: #323232;
+
+body{
+	margin:0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: $body_tekst;
+}
+
+ul, p, h1, h2, h3, h4{
+	padding: 0;
+	margin:0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	margin:0 auto;
+	position: relative;
+	width: 980px;
+	height: 100%;
+}
+
+
+header{
+	width: 100%;
+	height: 115px;
+	position: fixed;
+	top: 0px;
+	z-index: 99999;
+
+	#hoofdmenu{
+		height: 95px;
+		background-color: white;
+		width: 100%;
+		position: relative;
+		z-index: 99998;
+	
+		#logo{
+			position: absolute;
+			top:14px;
+		}
+
+		#logo h1{
+			display: block;
+			height:67px;
+			width: 137px;
+			overflow: hidden;
+			background-image: url("../img/logo.png");
+			background-size: 100% auto;
+			background-color: repeat;
+			text-indent: -9999px;
+		}
+
+		#menu_pijl{
+			width: 27px;
+			height: 13px;
+			background-image:url("../img/menu_pijl.png");
+			background-repeat: no-repeat;
+			background-size:100% 100%;
+			position: absolute;
+			right: 375px;
+			bottom:0px;
+		}
+
+		nav#menu_hoofdmenu{
+			position: absolute;
+			right:0px;
+			top:35px;
+			font-weight: 600;
+
+			ul{
+
+				li{
+					display: inline;
+					float: left;
+					margin-left:70px;
+
+					&:first-child{
+						margin-left:0px;
+					}
+
+					a{
+						color: #999999;
+
+						&:hover{
+							color:#2a2a2a;
+						}
+					}
+				}	
+			}
+		}
+	}
+
+	#dropdown{
+		width: 100%;
+		height: 50px;
+		background-image:url("../img/watermerk.png");
+		background-size: 224px auto;
+		background-repeat:no-repeat;
+		background-position: 0% 65%;
+		background-color: $goud;
+		position: relative;
+		top:-30px;
+		z-index: 99997;
+		-webkit-box-shadow:  0px 1px 7px 1px rgba(2, 2, 2, 0.4);
+        box-shadow:  0px 1px 7px 1px rgba(2, 2, 2, 0.4);
+		
+		nav{ 
+			width: 980px;
+			font-size: 14px;
+		
+		}
+		ul{
+			position: absolute;
+			right: 0px;
+			top:15px;
+
+			li{
+				display: inline;
+				float: left;
+				margin-left: 50px;
+
+				&:first-child{
+					margin-left:0px;
+				}
+
+				a{
+					color: #FFFFFF; 
+
+					&:hover{
+						color:#000000;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.leader_margin{
+	margin-top: 115px;
+}
+
+#leader{
+	width: 100%;
+	height: 520px;
+	position: relative;
+	overflow: hidden;
+	color: white;
+
+	#leader_pijl{
+		position: absolute;
+		z-index: 89999;
+		height: 23px;
+		width: 48px;
+		background-image: url("../img/leader_pijl.png");
+		background-size: 100% 100%;
+		bottom: -2px;
+		left: 20%;
+	}
+
+	hgroup{
+		position: absolute;
+		z-index: 89999;
+		bottom: 90px;
+		left: 10%;
+
+		h1{
+			font-size: 70px;
+			font-style: italic;
+			text-transform: uppercase;
+			letter-spacing: -5px;
+		}
+
+		h2{
+			font-size: 23px;
+			line-height: 28px;
+			font-weight: normal;
+			letter-spacing: -1px;
+
+			span{
+				font-weight:700;
+			}
+		}
+	}
+
+	p{	
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		z-index: 89999;
+		font-weight: bold;
+		font-size: 10px;
+	}
+
+	#leader_img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left:0px;
+		z-index: 89998;
+		background-image:url("../img/leader.png");
+		background-size: 100% auto;
+		background-position: center 80%;
+		background-repeat: no-repeat;
+	}
+
+	#goudeloper_img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left:0px;
+		z-index: 89998;
+		background-image:url("../img/goudeloper.png");
+		background-size: 100% auto;
+		background-position: center 80%;
+		background-repeat: no-repeat;
+	}
+
+}
+
+.rij{
+	padding: 100px 0px;
+}
+
+#introductie{
+
+	h1{
+		font-size: 50px;
+		line-height: 60px;
+		letter-spacing: -3px;
+		color: $goud_tekst;
+		font-style:italic;
+	}
+
+	p{
+		padding:15px 0px;
+
+	}
+
+	p.inleiding{
+		font-size: 22px;
+		line-height: 30px;
+		padding:40px 0px;
+
+	}
+
+	figure{
+		margin: 40px auto;
+		width: 600px;
+
+		figcaption{
+			font-size: 10px;
+			text-align: center;
+			color:#777;
+		}
+		
+	}
+
+	#instructie{
+		margin:0 auto;
+		text-align: center;
+
+		p{	
+			font-size: 14px;
+
+			span{
+				font-size: 20px;
+				color:$goud_tekst;
+				font-weight: 700;
+				letter-spacing: -1px;
+			}
+
+			padding-bottom: 20px;
+		}
+
+		a{
+			display: block;
+			position: relative;
+			margin:0 auto;
+			width: 65px;
+			height: 65px;
+			background-image: url("../img/pijl.png");
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+
+			&:hover{
+				background-image: url("../img/pijl_hover.png");
+			}
+		}
+	}
+}
+
+#sidenav{
+	width: 70px;
+	height: 140px;
+	background-color: #333333;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 999999;
+
+	ul{
+		padding:0;
+		margin: 0;
+		list-style: none;
+		margin-top: 24px;
+
+		li{
+				display: block;
+				width: 100%;
+				text-align: center;
+				padding:0;
+				margin:0;
+				overflow: hidden;
+				margin-top: 3px;
+
+				a{
+					color: #FFFFFF;
+					font-size: 25px;
+					line-height: 1px;
+					height: 12px;
+					width: 12px;
+					padding:0;
+					margin:0;
+
+					&:hover{
+						color:$goud;
+					}
+				}
+			}
+	}
+}
+
+.mogelijkheid{
+	h1{
+		font-size: 70px;
+		line-height: 60px;
+		font-style: italic;
+		color:$goud_tekst;
+		letter-spacing: -2px;
+	}
+
+	p{
+		float: left;
+	}
+
+	p.inleiding{
+		font-size: 22px;
+		line-height: 30px;
+		letter-spacing: -1px;
+		padding:30px 0px;
+	}
+
+	.mogelijkhedenlijst{
+		h3{
+			font-size: 22px;
+			letter-spacing: -1px;
+			margin-bottom: 15px;
+		}
+
+		ul{
+			list-style: none;
+			font-size: 16px;
+			line-height: 20px;
+			li{
+				background-image:url("../img/bullet.png");
+				background-size: auto 19px;
+				background-repeat: no-repeat;
+				background-position: left center;
+				text-indent: 30px;
+				padding: 6px 0px;
+			}
+		}
+	}
+
+}
+
+#print{
+	figure{
+		float: left;
+		margin-right: 40px;
+	}
+
+	.mogelijkhedenlijst{
+		float: left;
+		margin-top: 30px;
+	}
+
+}
+
+#online{
+	p.inleiding{
+		float: left;
+		width: 620px;
+	}
+
+	#screenshots{
+		position: relative;
+		top:-50px;
+		right: -40px;
+		float: left;
+	}
+
+	#televizier, #televizier-ring{
+		float: left;
+		width:465px;
+		padding-bottom: 50px;
+		
+		h1{
+			font-size: 16px;
+			font-style: normal;
+			letter-spacing: 0px;
+		}
+
+		p{
+			font-size: 12px;
+			line-height: 20px;
+			padding: 10px 0px;
+		}
+	}
+
+	#televizier{
+		margin-right: 50px;
+	}
+
+	.mogelijkhedenlijst{
+		float: left;
+	}
+
+	blockquote{
+		display: block;
+		float: left;
+		width: 280px;
+		margin-top:30px;
+
+		h1{
+			font-size: 29px;
+			line-height: 33px;
+			letter-spacing: -1px;
+
+			span{
+				color:#000000;
+			}
+		}
+
+		p{
+			font-size: 10px;
+			color:#8c8c8c;
+			font-style: italic;
+			margin-top: 10px;
+		}
+	}
+
+	#bereik{
+		margin-top: 50px;
+		width: 100%;
+
+		h3{
+			span{
+				font-weight: 400;
+			}
+		}
+
+		ul{	
+			margin-top: 10px;
+			border-top:solid 2px #dadada;
+			border-bottom:solid 2px #dadada;
+			height: auto;
+			overflow: hidden;
+
+			li{
+				display: inline;
+				float: left;
+				width: 33%;
+				text-align: center;
+				font-size: 40px;
+				line-height: 30px;
+				font-weight: 700;
+				color: $goud;
+				padding: 40px 0px 30px 0px;
+				position: relative;
+
+				span{
+					font-size: 12px;
+					line-height: 16px;
+					color:#323232;
+					position: relative;
+					top:-5px;
+
+				}
+			}
+		}
+	}
+
+}
+
+#event{
+	.mogelijkhedenlijst{
+		margin-top: 40px;
+	}
+}
+
+.clearfix{
+	clear: both;
+}
+
+
+.grijs{
+	background-color: #f2f2f2;
+}
+
+.wit{
+	background-color: #FFFFFF;
+}
+
+
+#contact{
+	background-color: $goud;
+	padding: 90px 0px;
+
+	img{
+		float: left;
+		width: 202px;
+	}
+
+	#tekst{
+		float: left;
+		margin-left: 98px;
+		width: 680px;
+		padding-top: 10px;
+
+		p{
+			font-size: 22px;
+			line-height: 32px;
+			color:#FFFFFF;
+			margin-bottom: 30px;
+
+			a{
+				color: #FFFFFF;
+				font-weight: 700;
+				text-decoration: underline;
+
+				&:hover{
+					color:#000000;
+				}
+			}
+		}
+
+		ul{
+			li{
+				display: inline-block;
+				margin-right: 5px;
+
+				a{
+					display: block;
+					height: 59px;
+					width: 59px;
+
+					img{
+						height: 59px;
+						width: 59px;
+					}
+				}
+
+				a#twitter{
+					background-image: url("../img/social_twitter.png");
+					background-repeat: no-repeat;
+					background-size: 100% auto;
+
+					&:hover{
+						background-image: url("../img/social_twitter_hover.png");
+					}
+				}
+
+				a#facebook{
+					background-image: url("../img/social_facebook.png");
+					background-repeat: no-repeat;
+					background-size: 100% auto;
+
+					&:hover{
+						background-image: url("../img/social_facebook_hover.png");
+					}
+				}
+
+				a#mail{
+					background-image: url("../img/social_mail.png");
+					background-repeat: no-repeat;
+					background-size: 100% auto;
+
+					&:hover{
+						background-image: url("../img/social_mail_hover.png");
+					}
+				}
+			}
+		}
+	}
+
+}
+
+footer{
+	background-color: $goud_tekst;
+	color:#FFFFFF;
+	font-size: 11px;
+	line-height: 50px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+

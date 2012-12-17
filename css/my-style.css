@@ -1,0 +1,427 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #323232; }
+
+ul, p, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 980px;
+  height: 100%; }
+
+header {
+  width: 100%;
+  height: 115px;
+  position: fixed;
+  top: 0px;
+  z-index: 99999; }
+  header #hoofdmenu {
+    height: 95px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    z-index: 99998; }
+    header #hoofdmenu #logo {
+      position: absolute;
+      top: 14px; }
+    header #hoofdmenu #logo h1 {
+      display: block;
+      height: 67px;
+      width: 137px;
+      overflow: hidden;
+      background-image: url("../img/logo.png");
+      background-size: 100% auto;
+      background-color: repeat;
+      text-indent: -9999px; }
+    header #hoofdmenu #menu_pijl {
+      width: 27px;
+      height: 13px;
+      background-image: url("../img/menu_pijl.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      right: 375px;
+      bottom: 0px; }
+    header #hoofdmenu nav#menu_hoofdmenu {
+      position: absolute;
+      right: 0px;
+      top: 35px;
+      font-weight: 600; }
+      header #hoofdmenu nav#menu_hoofdmenu ul li {
+        display: inline;
+        float: left;
+        margin-left: 70px; }
+        header #hoofdmenu nav#menu_hoofdmenu ul li:first-child {
+          margin-left: 0px; }
+        header #hoofdmenu nav#menu_hoofdmenu ul li a {
+          color: #999999; }
+          header #hoofdmenu nav#menu_hoofdmenu ul li a:hover {
+            color: #2a2a2a; }
+  header #dropdown {
+    width: 100%;
+    height: 50px;
+    background-image: url("../img/watermerk.png");
+    background-size: 224px auto;
+    background-repeat: no-repeat;
+    background-position: 0% 65%;
+    background-color: #c8a33c;
+    position: relative;
+    top: -30px;
+    z-index: 99997;
+    -webkit-box-shadow: 0px 1px 7px 1px rgba(2, 2, 2, 0.4);
+    box-shadow: 0px 1px 7px 1px rgba(2, 2, 2, 0.4); }
+    header #dropdown nav {
+      width: 980px;
+      font-size: 14px; }
+    header #dropdown ul {
+      position: absolute;
+      right: 0px;
+      top: 15px; }
+      header #dropdown ul li {
+        display: inline;
+        float: left;
+        margin-left: 50px; }
+        header #dropdown ul li:first-child {
+          margin-left: 0px; }
+        header #dropdown ul li a {
+          color: #FFFFFF; }
+          header #dropdown ul li a:hover {
+            color: #000000;
+            font-weight: 700; }
+
+.leader_margin {
+  margin-top: 115px; }
+
+#leader {
+  width: 100%;
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+  color: white; }
+  #leader #leader_pijl {
+    position: absolute;
+    z-index: 89999;
+    height: 23px;
+    width: 48px;
+    background-image: url("../img/leader_pijl.png");
+    background-size: 100% 100%;
+    bottom: -2px;
+    left: 20%; }
+  #leader hgroup {
+    position: absolute;
+    z-index: 89999;
+    bottom: 90px;
+    left: 10%; }
+    #leader hgroup h1 {
+      font-size: 70px;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: -5px; }
+    #leader hgroup h2 {
+      font-size: 23px;
+      line-height: 28px;
+      font-weight: normal;
+      letter-spacing: -1px; }
+      #leader hgroup h2 span {
+        font-weight: 700; }
+  #leader p {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 89999;
+    font-weight: bold;
+    font-size: 10px; }
+  #leader #leader_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 89998;
+    background-image: url("../img/leader.png");
+    background-size: 100% auto;
+    background-position: center 80%;
+    background-repeat: no-repeat; }
+  #leader #goudeloper_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 89998;
+    background-image: url("../img/goudeloper.png");
+    background-size: 100% auto;
+    background-position: center 80%;
+    background-repeat: no-repeat; }
+
+.rij {
+  padding: 100px 0px; }
+
+#introductie h1 {
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -3px;
+  color: #ad8d34;
+  font-style: italic; }
+#introductie p {
+  padding: 15px 0px; }
+#introductie p.inleiding {
+  font-size: 22px;
+  line-height: 30px;
+  padding: 40px 0px; }
+#introductie figure {
+  margin: 40px auto;
+  width: 600px; }
+  #introductie figure figcaption {
+    font-size: 10px;
+    text-align: center;
+    color: #777; }
+#introductie #instructie {
+  margin: 0 auto;
+  text-align: center; }
+  #introductie #instructie p {
+    font-size: 14px;
+    padding-bottom: 20px; }
+    #introductie #instructie p span {
+      font-size: 20px;
+      color: #ad8d34;
+      font-weight: 700;
+      letter-spacing: -1px; }
+  #introductie #instructie a {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 65px;
+    height: 65px;
+    background-image: url("../img/pijl.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto; }
+    #introductie #instructie a:hover {
+      background-image: url("../img/pijl_hover.png"); }
+
+#sidenav {
+  width: 70px;
+  height: 140px;
+  background-color: #333333;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 999999; }
+  #sidenav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 24px; }
+    #sidenav ul li {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      margin-top: 3px; }
+      #sidenav ul li a {
+        color: #FFFFFF;
+        font-size: 25px;
+        line-height: 1px;
+        height: 12px;
+        width: 12px;
+        padding: 0;
+        margin: 0; }
+        #sidenav ul li a:hover {
+          color: #c8a33c; }
+
+.mogelijkheid h1 {
+  font-size: 70px;
+  line-height: 60px;
+  font-style: italic;
+  color: #ad8d34;
+  letter-spacing: -2px; }
+.mogelijkheid p {
+  float: left; }
+.mogelijkheid p.inleiding {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  padding: 30px 0px; }
+.mogelijkheid .mogelijkhedenlijst h3 {
+  font-size: 22px;
+  letter-spacing: -1px;
+  margin-bottom: 15px; }
+.mogelijkheid .mogelijkhedenlijst ul {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px; }
+  .mogelijkheid .mogelijkhedenlijst ul li {
+    background-image: url("../img/bullet.png");
+    background-size: auto 19px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 30px;
+    padding: 6px 0px; }
+
+#print figure {
+  float: left;
+  margin-right: 40px; }
+#print .mogelijkhedenlijst {
+  float: left;
+  margin-top: 30px; }
+
+#online p.inleiding {
+  float: left;
+  width: 620px; }
+#online #screenshots {
+  position: relative;
+  top: -50px;
+  right: -40px;
+  float: left; }
+#online #televizier, #online #televizier-ring {
+  float: left;
+  width: 465px;
+  padding-bottom: 50px; }
+  #online #televizier h1, #online #televizier-ring h1 {
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0px; }
+  #online #televizier p, #online #televizier-ring p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px 0px; }
+#online #televizier {
+  margin-right: 50px; }
+#online .mogelijkhedenlijst {
+  float: left; }
+#online blockquote {
+  display: block;
+  float: left;
+  width: 280px;
+  margin-top: 30px; }
+  #online blockquote h1 {
+    font-size: 29px;
+    line-height: 33px;
+    letter-spacing: -1px; }
+    #online blockquote h1 span {
+      color: #000000; }
+  #online blockquote p {
+    font-size: 10px;
+    color: #8c8c8c;
+    font-style: italic;
+    margin-top: 10px; }
+#online #bereik {
+  margin-top: 50px;
+  width: 100%; }
+  #online #bereik h3 span {
+    font-weight: 400; }
+  #online #bereik ul {
+    margin-top: 10px;
+    border-top: solid 2px #dadada;
+    border-bottom: solid 2px #dadada;
+    height: auto;
+    overflow: hidden; }
+    #online #bereik ul li {
+      display: inline;
+      float: left;
+      width: 33%;
+      text-align: center;
+      font-size: 40px;
+      line-height: 30px;
+      font-weight: 700;
+      color: #c8a33c;
+      padding: 40px 0px 30px 0px;
+      position: relative; }
+      #online #bereik ul li span {
+        font-size: 12px;
+        line-height: 16px;
+        color: #323232;
+        position: relative;
+        top: -5px; }
+
+#event .mogelijkhedenlijst {
+  margin-top: 40px; }
+
+.clearfix {
+  clear: both; }
+
+.grijs {
+  background-color: #f2f2f2; }
+
+.wit {
+  background-color: #FFFFFF; }
+
+#contact {
+  background-color: #c8a33c;
+  padding: 90px 0px; }
+  #contact img {
+    float: left;
+    width: 202px; }
+  #contact #tekst {
+    float: left;
+    margin-left: 98px;
+    width: 680px;
+    padding-top: 10px; }
+    #contact #tekst p {
+      font-size: 22px;
+      line-height: 32px;
+      color: #FFFFFF;
+      margin-bottom: 30px; }
+      #contact #tekst p a {
+        color: #FFFFFF;
+        font-weight: 700;
+        text-decoration: underline; }
+        #contact #tekst p a:hover {
+          color: #000000; }
+    #contact #tekst ul li {
+      display: inline-block;
+      margin-right: 5px; }
+      #contact #tekst ul li a {
+        display: block;
+        height: 59px;
+        width: 59px; }
+        #contact #tekst ul li a img {
+          height: 59px;
+          width: 59px; }
+      #contact #tekst ul li a#twitter {
+        background-image: url("../img/social_twitter.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto; }
+        #contact #tekst ul li a#twitter:hover {
+          background-image: url("../img/social_twitter_hover.png"); }
+      #contact #tekst ul li a#facebook {
+        background-image: url("../img/social_facebook.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto; }
+        #contact #tekst ul li a#facebook:hover {
+          background-image: url("../img/social_facebook_hover.png"); }
+      #contact #tekst ul li a#mail {
+        background-image: url("../img/social_mail.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto; }
+        #contact #tekst ul li a#mail:hover {
+          background-image: url("../img/social_mail_hover.png"); }
+
+footer {
+  background-color: #ad8d34;
+  color: #FFFFFF;
+  font-size: 11px;
+  line-height: 50px; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */ }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */ }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */ }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
