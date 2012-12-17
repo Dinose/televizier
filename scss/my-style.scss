@@ -79,6 +79,7 @@ header{
 					display: inline;
 					float: left;
 					margin-left:70px;
+					padding-bottom: 40px;
 
 					&:first-child{
 						margin-left:0px;
@@ -91,7 +92,19 @@ header{
 							color:#2a2a2a;
 						}
 					}
-				}	
+				}
+
+				li.active, li.actief{
+					background-image:url("../img/menu_pijl.png");
+					background-repeat: no-repeat;
+					background-size:27px 13px;
+					background-position: center bottom;
+
+				}
+
+				li.actief a, li.active a{
+					color:#2a2a2a;
+				}
 			}
 		}
 	}
@@ -137,6 +150,10 @@ header{
 						font-weight: 700;
 					}
 				}
+			}
+			li.active a{
+				color:#000000;
+				font-weight: 700;
 			}
 		}
 	}
@@ -206,10 +223,14 @@ header{
 		top: 0px;
 		left:0px;
 		z-index: 89998;
-		background-image:url("../img/leader.png");
-		background-size: 100% auto;
-		background-position: center 80%;
-		background-repeat: no-repeat;
+		// background-image:url("../img/leader.png");
+		// background-size: 100% auto;
+		// background-position: center 80%;
+		// background-repeat: no-repeat;
+		img{
+			width: 100%;
+			position: relative;
+		}
 	}
 
 	#goudeloper_img{
@@ -219,10 +240,14 @@ header{
 		top: 0px;
 		left:0px;
 		z-index: 89998;
-		background-image:url("../img/goudeloper.png");
-		background-size: 100% auto;
-		background-position: center 80%;
-		background-repeat: no-repeat;
+		// background-image:url("../img/goudeloper.png");
+		// background-size: 100% auto;
+		// background-position: center 80%;
+		// background-repeat: no-repeat;
+		img{
+			width: 100%;
+			position: relative;
+		}
 	}
 
 }
@@ -300,13 +325,14 @@ header{
 }
 
 #sidenav{
-	width: 70px;
+	width: 0px;
 	height: 140px;
 	background-color: #333333;
 	position: fixed;
 	right: 0;
 	top: 50%;
 	z-index: 999999;
+
 
 	ul{
 		padding:0;
@@ -337,6 +363,9 @@ header{
 					}
 				}
 			}
+		li.active a{
+			color:$goud;
+		}
 	}
 }
 
