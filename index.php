@@ -17,7 +17,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,800,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".menu" data-offset="150">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -27,16 +27,16 @@
 <!-- Header -->
 
         <header>
-             <div id="hoofdmenu">
+             <div id="hoofdmenu" class="menu">
                  <div class="container">
-                    <div id="logo"><h1>De Gouden Televizier-Ring</h1></div>
+                    <div id="logo"><a href="#top"><h1>De Gouden Televizier-Ring</h1></a></div>
                     
-                    <div id="menu_pijl"></div>
+                   <!--  <div id="menu_pijl"></div> -->
 
-                    <nav id="menu_hoofdmenu">
-                        <ul>
-                            <li><a href="#introductie">Introductie</a></li>
-                            <li><a href="#print">De mogelijkheden</a></li>
+                    <nav id="menu_hoofdmenu" >
+                        <ul class="nav">
+                            <li class="active"><a href="#introductie">Introductie</a></li>
+                            <li class="optie"><a href="#options">De mogelijkheden</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>    
@@ -45,11 +45,11 @@
 
              <div id="dropdown" >
                  <nav id="menu_submenu" class="container">
-                     <ul>
-                        <li><a href="#">Print</a></li>
-                        <li><a href="#">Online</a></li>
-                        <li><a href="#">Social Media</a></li>
-                        <li><a href="#">Event</a></li>
+                     <ul class="nav">
+                        <li><a href="#print">Print</a></li>
+                        <li><a href="#online">Online</a></li>
+                        <li><a href="#socialmedia">Social Media</a></li>
+                        <li><a href="#event">Event</a></li>
                      </ul>
                  </nav>
              </div>    
@@ -69,7 +69,9 @@
             
             <p>©RVDA</p>
 
-            <div id="leader_img"></div>             
+            <div id="leader_img">
+                <img src="img/leader.jpg">
+            </div>             
          </section> 
 
 <!-- Introductie -->
@@ -106,7 +108,7 @@
                         <span>Bekijk de mogelijkheden per kanaal</span><br>
                         <b>Scroll</b> naar beneden of <b>gebruik je pijltjestoetsen</b>
                     </p>
-                    <a href="#"></a>
+                    <a href="#options"></a>
                 </div>
 
              </div>
@@ -116,22 +118,24 @@
 
         <section id="leader">
             <p>©RVDA</p>
-            <div id="goudeloper_img"></div>             
+            <div id="goudeloper_img">
+                <img src="img/goudeloper.jpg" alt="">
+            </div>             
          </section> 
 
          <div id="sidenav">
-             <ul>
-                 <li><a href="">&#9679</a></li>
-                 <li><a href="">&#9679</a></li>
-                 <li><a href="">&#9679</a></li>
-                 <li><a href="">&#9679</a></li>
+             <ul class="nav">
+                 <li class="active"><a  href="#print">&#9679</a></li>
+                 <li><a href="#online">&#9679</a></li>
+                 <li><a href="#socialmedia">&#9679</a></li>
+                 <li><a href="#event">&#9679</a></li>
              </ul>
 
          </div>
 
 
     <!-- Print -->
-
+        <div class="options" id="options">
             <section id="print" class="mogelijkheid rij wit">
                 <div class="container">
                     <h1>Print</h1>
@@ -228,9 +232,9 @@
                     <div id="bereik">
                         <h3>Bereik gedurende stemperiode <span>( 6-8weken )</span></h3>
                         <ul>
-                            <li>800.000<br>     <span>Unieke bezoekers</span></li>
-                            <li>2.000.000<br>   <span>Pageviews binnen de Ring pagina's</span></li>
-                            <li>1.300.000<br>   <span>Pageviews op de homepage Ring-pagina</span></li>
+                            <li id="uniekb">800.000<br>     <span>Unieke bezoekers</span></li>
+                            <li id="uniekp">2.000.000<br>   <span>Pageviews binnen de Ring pagina's</span></li>
+                            <li id="uniekh">1.300.000<br>   <span>Pageviews op de homepage Ring-pagina</span></li>
                         </ul>
                     </div>
 
@@ -282,6 +286,7 @@
             </section>
 
         </section>
+    </div>
 
 
 <!-- Contact -->
@@ -328,7 +333,15 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/jquery.easing.1.3.js"></script>
+        <script src="js/vendor/jquery.easing.compatibility.js"></script>
+        <script src="js/vendor/jquery-scrollspy.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="js/vendor/jquery.inview.min.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

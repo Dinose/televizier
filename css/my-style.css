@@ -58,13 +58,21 @@ header {
       header #hoofdmenu nav#menu_hoofdmenu ul li {
         display: inline;
         float: left;
-        margin-left: 70px; }
+        margin-left: 70px;
+        padding-bottom: 40px; }
         header #hoofdmenu nav#menu_hoofdmenu ul li:first-child {
           margin-left: 0px; }
         header #hoofdmenu nav#menu_hoofdmenu ul li a {
           color: #999999; }
           header #hoofdmenu nav#menu_hoofdmenu ul li a:hover {
             color: #2a2a2a; }
+      header #hoofdmenu nav#menu_hoofdmenu ul li.active, header #hoofdmenu nav#menu_hoofdmenu ul li.actief {
+        background-image: url("../img/menu_pijl.png");
+        background-repeat: no-repeat;
+        background-size: 27px 13px;
+        background-position: center bottom; }
+      header #hoofdmenu nav#menu_hoofdmenu ul li.actief a, header #hoofdmenu nav#menu_hoofdmenu ul li.active a {
+        color: #2a2a2a; }
   header #dropdown {
     width: 100%;
     height: 50px;
@@ -96,6 +104,9 @@ header {
           header #dropdown ul li a:hover {
             color: #000000;
             font-weight: 700; }
+      header #dropdown ul li.active a {
+        color: #000000;
+        font-weight: 700; }
 
 .leader_margin {
   margin-top: 115px; }
@@ -145,22 +156,20 @@ header {
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 89998;
-    background-image: url("../img/leader.png");
-    background-size: 100% auto;
-    background-position: center 80%;
-    background-repeat: no-repeat; }
+    z-index: 89998; }
+    #leader #leader_img img {
+      width: 100%;
+      position: relative; }
   #leader #goudeloper_img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 89998;
-    background-image: url("../img/goudeloper.png");
-    background-size: 100% auto;
-    background-position: center 80%;
-    background-repeat: no-repeat; }
+    z-index: 89998; }
+    #leader #goudeloper_img img {
+      width: 100%;
+      position: relative; }
 
 .rij {
   padding: 100px 0px; }
@@ -208,7 +217,7 @@ header {
       background-image: url("../img/pijl_hover.png"); }
 
 #sidenav {
-  width: 70px;
+  width: 0px;
   height: 140px;
   background-color: #333333;
   position: fixed;
@@ -238,6 +247,8 @@ header {
         margin: 0; }
         #sidenav ul li a:hover {
           color: #c8a33c; }
+    #sidenav ul li.active a {
+      color: #c8a33c; }
 
 .mogelijkheid h1 {
   font-size: 70px;
