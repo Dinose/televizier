@@ -1,5 +1,12 @@
 $(function() {
 
+	jQuery.fn.hCenterImage = function () {
+		var img = $(this);
+		var imgH = img.height();
+		var imgC = (imgH - 520) / 2;
+
+		img.css({'top' : -(imgC + 100)});
+	}
 	// $(document).keydown(function(e){
 	//     if (e.keyCode == 38) { 
 	//       	console.log(isCurrent);
@@ -17,6 +24,20 @@ $(function() {
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	 // some code..
+	 // 	$(window).load(function() {
+		// 	$('#leader_img img').hCenterImage();
+		// 	$('#goudeloper_img img').hCenterImage();
+
+		// 	$('[data-spy="scroll"]').each(function () {
+		// 	  var $spy = $(this).scrollspy('refresh')
+		// 	});
+		// });
+
+		// $(window).resize(function() {
+		// 	$('#leader_img img').hCenterImage();
+		// 	$('#goudeloper_img img').hCenterImage();
+		// });
+
 	}else{
 		// $('#sidenav').scrollspy();
 		$('body').scrollspy({offset: 150});
@@ -48,14 +69,6 @@ $(function() {
 			}
 		});
 
-		jQuery.fn.hCenterImage = function () {
-			var img = $(this);
-			var imgH = img.height();
-			var imgC = (imgH - 520) / 2;
-
-			img.css({'top' : -imgC});
-		}
-
 		/* PARALLAX SCROLL */
 		jQuery.fn.parallaxHeader = function () {
 			n = Math.ceil($("body").scrollTop() / 3);
@@ -63,8 +76,12 @@ $(function() {
 			$(this).css("-moz-transform", "translateY(-" + n + "px)");
 		};
 
-		$(window).scroll(function(){
+		window.onscroll = function () {
 			$("#leader_img img").parallaxHeader();
+		}
+
+		$(window).scroll(function(){
+			
 
 			// $('section').each(function() {
 
@@ -91,13 +108,6 @@ $(function() {
 		$(window).resize(function() {
 			$('#leader_img img').hCenterImage();
 			$('#goudeloper_img img').hCenterImage();
-		});
-
-
-		$('#bereik').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-		  	if (isInView) {
-		   
-		  	}
 		});
 
 		$('#menu_hoofdmenu a').on('click', function(event){

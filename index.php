@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href='css/my-style.css' />
+        <link rel="stylesheet" href='css/my-style.css?v=<?php echo time();?>' />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,800,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -78,7 +78,7 @@
 
          <section id="introductie" class="rij">
              <div class="container">
-                 <h1>Word zélf de grote winnaar van de Gouden Televizier-Ring verkiezing 2013!</h1>
+                 <h1>Word zélf de grote winnaar van de verkiezing ‘Gouden Televizier-Ring 2013’!</h1>
                  <p class="inleiding">
                     <b>Campagneperiode stemsite: 1 september 2013 – 1 oktober 2013. <br>
                         Uitzending 18 oktober 2013.</b><br>
@@ -202,7 +202,7 @@
                         </p>
                         <p>
                             <b>Doelgroep*</b><br>
-                            De doelgroep van de Televizier-Ringverkiezing is ‘gemiddeld 
+                            De doelgroep van de Televizier-Ring verkiezing is ‘gemiddeld 
                             Nederland’. En bij een profielonderzoek naar de stemmers komen de volgende oververtegenwoordigingen naar voren: 
                             De stemmers komen veelal uit de randstedelijke gebieden, ze hebben veelal hogere inkomens en een hoge welstandsklasse. Er wordt vaker gestemd door vrouwen dan door mannen. 
                         </p> 
@@ -230,7 +230,7 @@
                     <div class="clearfix"></div>
 
                     <div id="bereik">
-                        <h3>Bereik gedurende stemperiode <span>( 6-8weken )</span></h3>
+                        <h3>Bereik gedurende stemperiode <span>( 6-8 weken )</span></h3>
                         <ul>
                             <li id="uniekb">800.000<br>     <span>Unieke bezoekers</span></li>
                             <li id="uniekp">2.000.000<br>   <span>Pageviews binnen de Ring pagina's</span></li>
@@ -325,7 +325,7 @@
 
         <footer>
             <div class="container">
-                <p>Televizier-Ring ©2012/2013 Alle rechten voorbehouden. Beelden niet rechtenvrij te gebruiken.</p>
+                <p>Televizier-Ring ©2012/2013. Alle rechten voorbehouden. Beelden niet rechtenvrij te gebruiken.</p>
             </div>
         </footer>
 
@@ -342,7 +342,7 @@
         <script src="js/vendor/jquery.inview.min.js"></script>
         <script src="js/vendor/bootstrap.js"></script>
 
-        <script src="js/main.js"></script>
+        <script src="js/main.js?v=<?php echo time();?>"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

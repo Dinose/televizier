@@ -17,6 +17,12 @@ a {
   width: 980px;
   height: 100%; }
 
+.lt-ie9 header #hoofdmenu nav#menu_hoofdmenu ul li.active, .lt-ie9 header #hoofdmenu nav#menu_hoofdmenu ul li.actief {
+  background-image: url("../img/menu_pijl_ie.png") !important; }
+
+.lt-ie9 #logo h1 {
+  background-image: url("../img/logo_ie.png") !important; }
+
 header {
   width: 100%;
   height: 115px;
@@ -135,7 +141,8 @@ header {
       font-size: 70px;
       font-style: italic;
       text-transform: uppercase;
-      letter-spacing: -5px; }
+      letter-spacing: -5px;
+      font-weight: 700; }
     #leader hgroup h2 {
       font-size: 23px;
       line-height: 28px;
@@ -179,7 +186,8 @@ header {
   line-height: 60px;
   letter-spacing: -3px;
   color: #ad8d34;
-  font-style: italic; }
+  font-style: italic;
+  font-weight: 700; }
 #introductie p {
   padding: 15px 0px; }
 #introductie p.inleiding {
@@ -215,6 +223,12 @@ header {
     background-size: 100% auto; }
     #introductie #instructie a:hover {
       background-image: url("../img/pijl_hover.png"); }
+
+.lt-ie9 #instructie a {
+  background-image: url("../img/pijl_ie.png") !important; }
+
+.lt-ie9 #instructie a:hover {
+  background-image: url("../img/pijl_hover_ie.png") !important; }
 
 #sidenav {
   width: 0px;
@@ -277,6 +291,9 @@ header {
     background-repeat: no-repeat;
     background-position: left center;
     padding: 6px 30px; }
+
+.lt-ie9 .mogelijkheid .mogelijkhedenlijst ul li {
+  background-image: url("../img/bullet_ie.png"); }
 
 #print figure {
   float: left;
@@ -419,6 +436,21 @@ header {
         #contact #tekst ul li a#mail:hover {
           background-image: url("../img/social_mail_hover.png"); }
 
+.lt-ie9 a#twitter {
+  background-image: url("../img/social_twitter_ie.png") !important; }
+  .lt-ie9 a#twitter:hover {
+    background-image: url("../img/social_twitter_hover_ie.png"); }
+
+.lt-ie9 a#facebook {
+  background-image: url("../img/social_facebook_ie.png") !important; }
+  .lt-ie9 a#facebook:hover {
+    background-image: url("../img/social_facebook_hover_ie.png"); }
+
+.lt-ie9 a#mail {
+  background-image: url("../img/social_mail_ie.png") !important; }
+  .lt-ie9 a#mail:hover {
+    background-image: url("../img/social_mail_hover_ie.png"); }
+
 footer {
   background-color: #ad8d34;
   color: #FFFFFF;
@@ -427,6 +459,9 @@ footer {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #leader #leader_img img {
+    top: -50px; }
+
   #sidenav {
     display: none; }
 
@@ -486,6 +521,8 @@ footer {
               color: #999999; }
               header #hoofdmenu nav#menu_hoofdmenu ul li a:hover {
                 color: #2a2a2a; }
+          header #hoofdmenu nav#menu_hoofdmenu ul li.active, header #hoofdmenu nav#menu_hoofdmenu ul li.actief {
+            background-image: none !important; }
     header #dropdown {
       position: none;
       top: 0px;
@@ -637,7 +674,8 @@ footer {
     #online blockquote h1 {
       font-size: 25px;
       line-height: 29px;
-      letter-spacing: -1px; }
+      letter-spacing: -1px;
+      font-weight: 700; }
       #online blockquote h1 span {
         color: #000000; }
     #online blockquote p {
