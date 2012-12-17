@@ -106,7 +106,7 @@
                 <div id="instructie">
                     <p>
                         <span>Bekijk de mogelijkheden per kanaal</span><br>
-                        <b>Scroll</b> naar beneden of <b>gebruik je pijltjestoetsen</b>
+                        <b>Scroll naar beneden</b>
                     </p>
                     <a href="#options"></a>
                 </div>
@@ -296,7 +296,7 @@
                 <img src="img/footer_logo.png" alt="De Gouden Televizier-Ring">
                 <div id="tekst">
                     <p>
-                        Wilt u eens praten over de mogelijkheden of heeft u ideeën? Laat het ons weten. U kunt contact opnemen met <a href="mailto:gebruiker@provider.nl?SUBJECT=Adverteren met de Gouden Televizier-Ring">Rob Lucassen</a> of bellen met <b>035 - 672 6903</b>.
+                        Wilt u eens praten over de mogelijkheden of heeft u ideeën? Laat het ons weten. U kunt contact opnemen met <a href="mailto:rob.lucassen@sanomamedia.nl?SUBJECT=Adverteren met de Gouden Televizier-Ring">Rob Lucassen</a> of bellen met <b>035 - 672 6903</b>.
                     </p>
                     <ul>
                         <li>
@@ -310,7 +310,7 @@
                             </a>
                         </li>
                         <li>
-                            <a id="mail" href="mailto:gebruiker@provider.nl?SUBJECT=Adverteren met de Gouden Televizier-Ring">
+                            <a id="mail" href="mailto:rob.lucassen@sanomamedia.nl?SUBJECT=Adverteren met de Gouden Televizier-Ring">
                             </a>
                         </li>
                     </ul>
