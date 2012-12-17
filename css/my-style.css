@@ -265,8 +265,7 @@ header {
     background-size: auto 19px;
     background-repeat: no-repeat;
     background-position: left center;
-    text-indent: 30px;
-    padding: 6px 0px; }
+    padding: 6px 30px; }
 
 #print figure {
   float: left;
@@ -283,6 +282,8 @@ header {
   top: -50px;
   right: -40px;
   float: left; }
+  #online #screenshots img {
+    width: 309px; }
 #online #televizier, #online #televizier-ring {
   float: left;
   width: 465px;
@@ -415,7 +416,320 @@ footer {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */ }
+  #sidenav {
+    display: none; }
+
+  .container {
+    width: 100%; }
+
+  .rij {
+    padding: 50px 0px; }
+
+  header {
+    width: 100%;
+    height: auto;
+    position: static;
+    z-index: 99999; }
+    header #hoofdmenu {
+      height: auto;
+      background-color: white;
+      width: 100%;
+      position: none;
+      z-index: 99998;
+      overflow: hidden; }
+      header #hoofdmenu #logo {
+        position: static;
+        float: left;
+        clear: both;
+        margin-top: 20px;
+        margin-left: 20px; }
+      header #hoofdmenu #logo h1 {
+        display: block;
+        height: 67px;
+        width: 137px;
+        overflow: hidden;
+        background-image: url("../img/logo.png");
+        background-size: 100% auto;
+        background-color: repeat;
+        text-indent: -9999px; }
+      header #hoofdmenu #menu_pijl {
+        display: none; }
+      header #hoofdmenu nav#menu_hoofdmenu {
+        float: right;
+        position: static;
+        bottom: 0px;
+        right: 0px;
+        font-weight: 600;
+        font-size: 11px; }
+        header #hoofdmenu nav#menu_hoofdmenu ul {
+          margin-top: 20px;
+          margin-right: 20px; }
+          header #hoofdmenu nav#menu_hoofdmenu ul li {
+            display: inline;
+            float: left;
+            margin-left: 20px;
+            padding-bottom: 20px; }
+            header #hoofdmenu nav#menu_hoofdmenu ul li:first-child {
+              margin-left: 0px; }
+            header #hoofdmenu nav#menu_hoofdmenu ul li a {
+              color: #999999; }
+              header #hoofdmenu nav#menu_hoofdmenu ul li a:hover {
+                color: #2a2a2a; }
+    header #dropdown {
+      position: none;
+      top: 0px;
+      width: 100%;
+      height: 20px;
+      background-image: url("../img/watermerk.png");
+      background-size: 224px auto;
+      background-repeat: no-repeat;
+      background-position: 0% 65%;
+      background-color: #c8a33c;
+      z-index: 99997;
+      -webkit-box-shadow: 0px 1px 7px 1px rgba(2, 2, 2, 0.4);
+      box-shadow: 0px 1px 7px 1px rgba(2, 2, 2, 0.4); }
+      header #dropdown nav {
+        display: none; }
+
+  .leader_margin {
+    margin-top: 0px; }
+
+  #leader {
+    width: 100%;
+    background-color: red;
+    position: static;
+    overflow: hidden;
+    height: 160px; }
+    #leader #leader_pijl {
+      display: none; }
+    #leader hgroup {
+      display: none; }
+    #leader #leader_img {
+      width: 100%;
+      position: static;
+      background-image: url("../img/leader.png");
+      background-size: 100% auto;
+      background-position: center 80%;
+      background-repeat: no-repeat; }
+    #leader #goudeloper_img {
+      width: 100%;
+      position: static;
+      background-image: url("../img/leader.png");
+      background-size: 100% auto;
+      background-position: center 80%;
+      background-repeat: no-repeat; }
+
+  #introductie h1 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #ad8d34;
+    font-style: italic;
+    letter-spacing: 0px;
+    padding: 0px 20px; }
+  #introductie p {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 20px 20px 10px 20px; }
+  #introductie p.inleiding {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 40px 20px 0px 20px; }
+  #introductie #instructie {
+    display: none; }
+
+  #boulevard {
+    display: none; }
+
+  .mogelijkheid h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-style: italic;
+    color: #ad8d34;
+    letter-spacing: 0px;
+    padding: 0px 20px; }
+  .mogelijkheid p {
+    float: none;
+    padding: 0px 20px; }
+  .mogelijkheid p.inleiding {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    padding: 30px 0px; }
+  .mogelijkheid .mogelijkhedenlijst {
+    padding: 0px 20px; }
+    .mogelijkheid .mogelijkhedenlijst h3 {
+      font-size: 22px;
+      letter-spacing: -1px;
+      margin-bottom: 15px; }
+    .mogelijkheid .mogelijkhedenlijst ul {
+      list-style: none;
+      font-size: 16px;
+      line-height: 20px; }
+
+  #print figure {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px; }
+    #print figure img {
+      display: inline-block;
+      width: 80%; }
+  #print p {
+    padding: 20px; }
+  #print .mogelijkhedenlijst {
+    padding: 20px;
+    float: left;
+    margin-top: 30px; }
+
+  #online p.inleiding {
+    width: auto;
+    float: none;
+    clear: both;
+    padding: 20px 20px; }
+  #online p {
+    float: none;
+    padding: 0px 20px; }
+  #online #screenshots {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px; }
+    #online #screenshots img {
+      display: inline-block;
+      width: 80%; }
+  #online #televizier, #online #televizier-ring {
+    float: none;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+    #online #televizier h1, #online #televizier-ring h1 {
+      font-size: 16px;
+      font-style: normal;
+      letter-spacing: 0px; }
+    #online #televizier p, #online #televizier-ring p {
+      font-size: 12px;
+      line-height: 20px;
+      padding: 10px 20px; }
+  #online #televizier {
+    margin-top: 20px;
+    margin-right: 0px; }
+  #online .mogelijkhedenlijst {
+    float: none; }
+  #online blockquote {
+    display: block;
+    clear: both;
+    float: none;
+    width: 85%;
+    margin-top: 30px; }
+    #online blockquote h1 {
+      font-size: 25px;
+      line-height: 29px;
+      letter-spacing: -1px; }
+      #online blockquote h1 span {
+        color: #000000; }
+    #online blockquote p {
+      font-size: 10px;
+      color: #8c8c8c;
+      font-style: italic;
+      margin-top: 10px; }
+  #online #bereik {
+    margin-top: 50px;
+    width: 88%;
+    padding: 10px 20px; }
+    #online #bereik h3 span {
+      font-weight: 400; }
+    #online #bereik ul {
+      margin-top: 10px;
+      border-top: solid 2px #dadada;
+      border-bottom: solid 2px #dadada;
+      height: auto;
+      overflow: hidden;
+      padding: 0px 20px;
+      display: block; }
+      #online #bereik ul li {
+        display: inline;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #c8a33c;
+        padding: 20px 0px 0px 0px;
+        position: relative; }
+        #online #bereik ul li:last-child {
+          padding-bottom: 20px; }
+        #online #bereik ul li span {
+          font-size: 12px;
+          line-height: 16px;
+          color: #323232;
+          position: relative;
+          top: -10px; }
+
+  #contact {
+    background-color: #c8a33c;
+    padding: 0px; }
+    #contact img {
+      display: none; }
+    #contact #tekst {
+      float: left;
+      width: 100%;
+      padding-top: 10px;
+      margin: 0; }
+      #contact #tekst p {
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-bottom: 0px;
+        padding: 20px;
+        padding-bottom: 0px; }
+        #contact #tekst p a {
+          color: #FFFFFF;
+          font-weight: 700;
+          text-decoration: underline; }
+          #contact #tekst p a:hover {
+            color: #000000; }
+      #contact #tekst ul {
+        margin: 20px; }
+        #contact #tekst ul li {
+          display: inline-block;
+          margin-right: 5px; }
+          #contact #tekst ul li a {
+            display: block;
+            height: 59px;
+            width: 59px; }
+            #contact #tekst ul li a img {
+              height: 59px;
+              width: 59px; }
+          #contact #tekst ul li a#twitter {
+            background-image: url("../img/social_twitter.png");
+            background-repeat: no-repeat;
+            background-size: 100% auto; }
+            #contact #tekst ul li a#twitter:hover {
+              background-image: url("../img/social_twitter_hover.png"); }
+          #contact #tekst ul li a#facebook {
+            background-image: url("../img/social_facebook.png");
+            background-repeat: no-repeat;
+            background-size: 100% auto; }
+            #contact #tekst ul li a#facebook:hover {
+              background-image: url("../img/social_facebook_hover.png"); }
+          #contact #tekst ul li a#mail {
+            background-image: url("../img/social_mail.png");
+            background-repeat: no-repeat;
+            background-size: 100% auto; }
+            #contact #tekst ul li a#mail:hover {
+              background-image: url("../img/social_mail_hover.png"); }
+
+  #socialmedia p {
+    padding: 20px; }
+
+  footer {
+    background-color: #ad8d34;
+    color: #FFFFFF;
+    font-size: 10px;
+    line-height: 13px;
+    padding: 20px 20px; } }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */ }

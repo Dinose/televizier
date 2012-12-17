@@ -94,8 +94,8 @@
                     Maximale exposure, sterke branding. En sponsormogelijkheden genoeg. Van een enkele uiting tot een volledig geïntegreerde marketingcampagne. Meerdere mediakanalen staan tot uw beschikking. Elk met hun eigen kwaliteiten en doelgroepen. Zorg dat de uitreiking van de Gouden Televizier-Ring 2013 in het teken staat van úw sponsorboodschap! Wij leveren het maatwerk wel.
                 </p>
 
-                <figure>
-                    <img src="img/boulevard.png" alt="De Gouden Televizier-Ring op RTL Boulevard" width="600p" />
+                <figure id="boulevard">
+                    <img src="img/boulevard.png" alt="De Gouden Televizier-Ring op RTL Boulevard" width="600" />
                     <figcaption>
                         Gedurende de campagne-periode besteed <b>RTL Boulevard</b> veel aandacht aan de genomineerden en de verkiezingen
                     </figcaption>
@@ -172,7 +172,7 @@
                     </p>
 
                     <div id="screenshots">
-                        <img src="img/laptop.png" alt="De Televizier-Ring online" width="309"/> 
+                        <img src="img/laptop.png" alt="De Televizier-Ring online" /> 
                     </div> 
 
                     <div class="clearfix"></div>
@@ -268,7 +268,7 @@
                         <h3>De mogelijkheden</h3>
                         <ul>
                             <li>Award-vernoeming door klant</li>
-                            <li><span style="display:inline-block; text-indent:0px;">Plek op wallpaper op event Diverse printmedia (Story en glossy magazines) besteden achteraf aandacht aan de sterren op de rode loper. Uw merk krijgt dus achteraf nog veel aandacht.</span></li>
+                            <li>Plek op wallpaper op event Diverse printmedia (Story en glossy magazines) besteden achteraf aandacht aan de sterren op de rode loper. Uw merk krijgt dus achteraf nog veel aandacht.</li>
                             <li>Aftiteling</li>
                             <li>Goodiebag</li>
                             <li>Vermelding in de nieuwsbrieven</li>
